@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="cyan">
+<center>
+    <table border="2">
+        <tr>
+        <th>jobid</th>
+            <th>title</th>
+            <th>skills</th>
+            <th>description</th>
+        </tr>
+        {% for p in records %}
+            <tr>
+            <td>{{ p.jobid }}</td>
+            <td>{{ p.title }}</td>
+            <td>{{ p.skills }}</td>
+            <td>{{ p.description }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</center>
+
+</body>
+</html>
